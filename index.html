@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <img src="Bebby.jpg" alt="Valentine Image">
+    <h1 id="head"></h1>
+    <p class="ask">Will You Be My Valentine?</p>
+    <div class="center">
+        <button id="yes" onclick="goToLink()">Yes</button>
+        <button id="no" onclick="increaseYesSize()">No</button>
+    </div>
+
+    <script>
+        function goToLink() {
+            window.location.href = "file:///C:/Users/abc/Downloads/Valntine%20day/rgb.html"; // Change to your desired link
+        }
+
+        function increaseYesSize() {
+            const yesBtn = document.getElementById('yes');
+            let currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize);
+            yesBtn.style.fontSize = (currentSize + 5) + "px";
+        }
+    </script>
+</body>
+</html>

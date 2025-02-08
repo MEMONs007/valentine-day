@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+            animation: rgbGlow 0.5s infinite alternate;
+        }
+        img{
+            display: block;
+        margin-top:50px ;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 300px;
+        }
+        .ask{
+       text-align: center;
+       font-size: 50px;
+       font-family: Courier, monospace;
+
+}
+
+button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    
+  }
+  
+  button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+        @keyframes rgbGlow {
+            0% {
+                background: rgb(255, 0, 0);
+            }
+            50% {
+                background: rgb(0, 255, 0);
+            }
+            100% {
+                background: rgb(0, 0, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="hartsmile.jpg" alt="Valentine Image">
+    <h1 id="head"></h1>
+    <p class="ask">Do You Want See My Reaction ?</p>
+    <div class="center">
+       <a href="file:///C:/Users/abc/Downloads/Valntine%20day/video.html"> <button id="yes" onclick="goToLink()">Yes</button></a>
+</body>
+</html>
