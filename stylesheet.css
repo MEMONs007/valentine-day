@@ -70,3 +70,17 @@ left: 50%;
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 }
+ @media screen and (max-width: 600px)
+{
+  p{
+    font-size: 36px;
+    line-height: 50px;
+  }
+   ask{
+    font-size: 36px;
+    line-height: 50px;
+   }
+  button{
+        font-size: 14px;
+        padding: 10px 20px;
+  }
