@@ -1,11 +1,11 @@
 <html>
 <body>
     <p>Roses are red, and the stars shine bright,
-  You light up my world with love’s pure delight.
-   With you by my side, life’s sweet every day,</p>
-    <video controls width="600">
+You light up my world with love’s pure delight.
+With you by my side, life’s sweet every day</p>
+    <video controls>
         <source
-            src="Downlod (1).mp4"
+            src="Download (1).mp4"
             type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -16,15 +16,28 @@
             background: rgb(224, 6, 173);
             overflow: hidden;
             animation: rgbGlow 0.5s infinite alternate;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
-        p{
-       text-align: center;
-       font-size: 50px;
-       font-family: Courier, monospace;
-        }
-        video{
-            padding-left: 500px;
 
+        p {
+            font-size: 2.5rem;
+            font-family: Courier, monospace;
+            margin: 20px 0;
+        }
+
+        video {
+            max-width: 90%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            p {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </body>
